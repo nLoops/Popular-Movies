@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_lables">
+        <item>@string/setting_popular_label</item>
+        <item>@string/setting_toprated_label</item>
+    </string-array>
+
+    <string-array name="setting_values">
+        <item>@string/setting_popular_value</item>
+        <item>@string/setting_toprated_value</item>
+    </string-array>
+
+
+
+</resources>

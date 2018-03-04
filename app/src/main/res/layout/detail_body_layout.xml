@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/body_layout_padding">
+
+    <ImageView
+        android:id="@+id/iv_detail_poster"
+        android:layout_width="@dimen/secondry_poster_dimen"
+        android:layout_height="@dimen/secondry_poster_dimen"
+        android:contentDescription="@string/detail_poster_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_detail_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/body_title_size"
+        app:layout_constraintLeft_toRightOf="@id/iv_detail_poster"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_detail_poster"
+        tools:text="The Shawhank Movie" />
+
+    <RatingBar
+        android:id="@+id/rb_detail_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/tv_detail_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_title" />
+
+    <TextView
+        android:id="@+id/tv_detail_release_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/body_date_size"
+        app:layout_constraintLeft_toRightOf="@id/iv_detail_poster"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rb_detail_bar"
+        tools:text="28-07-2015" />
+
+    <TextView
+        android:id="@+id/tv_detail_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/body_overview_size"
+        android:typeface="monospace"
+        app:layout_constraintLeft_toRightOf="@id/iv_detail_poster"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_release_date"
+        tools:text="Overview" />
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/body_share_margin_top"
+        android:contentDescription="@string/detail_share_content"
+        android:src="@drawable/ic_share_white_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_overview" />
+
+    <ImageView
+        android:id="@+id/iv_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/detail_fav_content"
+        android:onClick="triggerFavorite"
+        android:src="@drawable/ic_favorite_border_white_24dp"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_share" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_detail_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/body_recycleview_margin"
+        android:scrollbarThumbHorizontal="@drawable/scrollbar_drawable"
+        android:scrollbars="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_share" />
+
+    <TextView
+        android:id="@+id/tv_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/body_recycleview_margin"
+        android:text="@string/review_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/rv_detail_layout"
+        app:layout_constraintTop_toBottomOf="@id/rv_detail_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_review"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/second_body_recycleview"
+        app:layout_constraintLeft_toLeftOf="@id/tv_reviews"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_reviews" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>

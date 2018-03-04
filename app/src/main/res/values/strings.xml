@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Movie Station</string>
+    <string name="error_message"> An error has occurred. Please try again by clicking REFRESH</string>
+    <string name="no_internet">No internet, please check your connection</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="toast_fav_imageview">Active Soon</string>
+    <string name="no_video_detail">No Available Trailer.</string>
+    <!--String Keys for Catalog - Detail Intent-->
+    <string name="detail_poster">POSTER</string>
+    <string name="detail_title">TITLE</string>
+    <string name="detail_date">DATE</string>
+    <string name="detail_overview">OVERVIEW</string>
+    <string name="detail_ID">MovieID</string>
+    <string name="detail_vote">VOTE</string>
+    <string name="toast_deleted_favorite">Movie Removed From Favorites</string>
+    <string name="alert_favorite_dialog_title">Remove Movie From Favorites</string>
+    <string name="alert_favorite_remove">Remove</string>
+    <string name="alert_favorite_cancel">Cancel</string>
+    <string name="movie_already_in_list">Movie already in the favorite list</string>
+    <string name="movie_saved_favorite">Saved To Favorites</string>
+    <string name="review_label">Reviews</string>
+    <string name="favorite_empty_view">Favorite list empty</string>
+    <!--                                     -->
+    <!--Strings for Settings Keys and Values-->
+    <!--                                     -->
+    <string name="favorite_menu_label">Favorites list</string>
+    <string name="setting_menu_label">User Settings</string>
+    <string name="setting_label">Movies Settings</string>
+    <string name="setting_key" translatable="false">movie_setting</string>
+    <string name="setting_default" translatable="false">@string/setting_popular_value</string>
+    <string name="setting_toprated_label">Top Rated Movies</string>
+    <string name="setting_toprated_value" translatable="false">top_rated</string>
+    <string name="setting_popular_label">Popular Movies</string>
+    <string name="setting_popular_value">popular_movie</string>
+    <string name="setting_title">User Settings</string>
+    <!--ImageViews Content Description-->
+    <string name="detail_trailer_content">Main Trailer ImageView</string>
+    <string name="detail_youtube_content">Youtube Logo ImageView just for decorate</string>
+    <string name="detail_poster_content">Main Poster of the Movie ImageView</string>
+    <string name="detail_share_content">Share Logo ImageView</string>
+    <string name="detail_fav_content">Favourite logo imageView</string>
+    <string name="movie_list_poster_content">Main Movie Poster</string>
+    <string name="video_list_poster_content">The Video first frame imageView</string>
+    <string name="video_list_play_content">Play Logo ImageView</string>
+
+
+</resources>

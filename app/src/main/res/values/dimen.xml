@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="progress_bar_dimen">42dp</dimen>
+    <dimen name="detail_act_main_image_dimen">200dp</dimen>
+    <dimen name="youtube_image_dimen">100dp</dimen>
+    <dimen name="secondry_poster_dimen">150dp</dimen>
+    <dimen name="app_bar_dimen">300dp</dimen>
+    <dimen name="detail_layout_margin_bottom">5dp</dimen>
+    <dimen name="body_layout_padding">5dp</dimen>
+    <dimen name="body_title_size">20sp</dimen>
+    <dimen name="body_date_size">18sp</dimen>
+    <dimen name="body_overview_size">16sp</dimen>
+    <dimen name="body_share_margin_top">32dp</dimen>
+    <dimen name="body_recycleview_margin">16dp</dimen>
+    <dimen name="second_body_recycleview">8dp</dimen>
+    <dimen name="nestedscroll_margin_top">15dp</dimen>
+
+</resources>
